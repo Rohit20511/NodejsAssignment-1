@@ -64,7 +64,7 @@ const getWelcomeMsg = () => {
 
 // Instantiate and start http server
 const httpServer = http.createServer((req, res) => unifiedServer(req, res));
-httpServer.listen(config.httpPort, () => console.log('The HTTPS server is running on port' + config.httpsPort));
+httpServer.listen(config.httpPort, () => console.log('The HTTP server is running on port' + config.httpPort));
 
 // Instantiate and start https server
 const httpsServerOptions = {
